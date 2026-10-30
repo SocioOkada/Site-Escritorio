@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://okadaadvocacia.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jonas Okada Sociedade de Advocacia">
+<meta property="og:description" content="Advocacia trabalhista empresarial, preventiva e contenciosa. Curitiba, PR.">
+<meta property="og:image" content="https://okadaadvocacia.com/jonas-okada.jpg">
+<meta property="og:locale" content="pt_BR">
+<title>Jonas Okada Sociedade de Advocacia | Advocacia trabalhista empresarial em Curitiba</title>
+<meta name="description" content="Advocacia trabalhista empresarial, preventiva e contenciosa, para empresas. Atendimento ágil e sem burocracia. Curitiba, PR.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&family=Archivo:wdth,wght@100,500;100,600;112,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; -webkit-text-size-adjust: 100%; }
+img { max-width: 100%; }
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+/* Layout: faixa escura de abertura com o símbolo, depois colunas sóbrias de leitura sobre papel; marca preto e branco do escritório. */
+:root {
+  --paper: #fbfbfa;
+  --ink: #141515;
+  --muted: #5b5f61;
+  --rule: #d9dbdb;
+  --band: #0d0e0e;
+  --band-ink: #f4f4f2;
+  --band-muted: #a7abad;
+  --accent: #1f3b57;
+  --f-mark: "Michroma", "Eurostile", "Arial Black", sans-serif;
+  --f-head: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #111213; --ink: #ecedeb; --muted: #a2a6a8; --rule: #2b2e30;
+    --band: #050606; --band-ink: #f4f4f2; --band-muted: #9ea2a4; --accent: #9fbbd6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #111213; --ink: #ecedeb; --muted: #a2a6a8; --rule: #2b2e30;
+  --band: #050606; --band-ink: #f4f4f2; --band-muted: #9ea2a4; --accent: #9fbbd6;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.65 var(--f-body); }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--f-head); font-weight: 600; font-stretch: 100%; text-wrap: balance; margin: 0; line-height: 1.15; }
+.eyebrow { font: 400 0.68rem/1.4 var(--f-mark); letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin: 0; }
+p { margin: 0; }
+
+/* Faixa de abertura */
+.band { background: var(--band); color: var(--band-ink); }
+.band .eyebrow { color: var(--band-muted); }
+.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 22px; border-bottom: 1px solid #ffffff1f; }
+.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+.brand svg { width: 38px; height: 38px; flex: none; }
+.brand-name { font: 400 0.95rem/1.1 var(--f-mark); letter-spacing: 0.06em; }
+.brand-sub { display: block; font: 400 0.6rem/1.5 var(--f-mark); letter-spacing: 0.14em; color: var(--band-muted); }
+.top nav { display: flex; gap: 22px; font: 500 0.88rem var(--f-head); }
+.top nav a { text-decoration: none; color: var(--band-muted); }
+.top nav a:hover { color: var(--band-ink); }
+
+.hero { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.6fr); gap: 56px; align-items: end; padding-block: 72px 0; }
+.hero-text { padding-bottom: 72px; display: grid; gap: 22px; }
+.hero h1 { font-size: clamp(2rem, 4.6vw, 3.35rem); font-stretch: 112%; letter-spacing: -0.01em; }
+.hero .lede { font-size: 1.15rem; color: var(--band-muted); max-width: 34em; }
+.hero .lede strong { color: var(--band-ink); font-weight: 600; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 13px 20px; font: 600 0.95rem var(--f-head); text-decoration: none; border: 1px solid currentColor; }
+.btn-solid { background: var(--band-ink); color: var(--band); border-color: var(--band-ink); }
+.btn-solid:hover { background: transparent; color: var(--band-ink); }
+.btn-line { color: var(--band-ink); }
+.btn-line:hover { background: #ffffff14; }
+.btn svg { width: 18px; height: 18px; }
+.portrait { margin: 0; position: relative; align-self: end; justify-self: end; width: 100%; max-width: 340px; }
+.portrait img { display: block; width: 100%; height: auto; aspect-ratio: 600 / 527; object-fit: cover; filter: grayscale(1) contrast(1.05); }
+.portrait::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 58%, var(--band) 80%); pointer-events: none; }
+.portrait figcaption { position: absolute; left: 0; bottom: 0; right: 0; padding: 0 0 14px; z-index: 1; font: 400 0.62rem/1.5 var(--f-mark); letter-spacing: 0.12em; color: var(--band-muted); text-align: center; }
+
+.facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #ffffff1f; }
+.facts div { padding-block: 22px; padding-right: 16px; }
+.facts dt { font: 400 0.62rem/1.4 var(--f-mark); letter-spacing: 0.14em; text-transform: uppercase; color: var(--band-muted); }
+.facts dd { margin: 6px 0 0; font: 600 1.05rem/1.3 var(--f-head); }
+dl { margin: 0; }
+
+/* Seções */
+section.block { padding-block: 88px; border-bottom: 1px solid var(--rule); }
+.split { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.6fr); gap: 56px; }
+.split > header { display: grid; gap: 14px; align-content: start; }
+.split h2 { font-size: clamp(1.55rem, 2.8vw, 2.1rem); }
+.prose { display: grid; gap: 18px; max-width: 40em; }
+.prose p { color: var(--ink); }
+
+.areas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 2px solid var(--ink); }
+.area { padding: 26px 24px 8px 0; display: grid; gap: 12px; align-content: start; }
+.area + .area { padding-left: 24px; border-left: 1px solid var(--rule); }
+.area h3 { font-size: 1.2rem; }
+.area .kind { font: 400 0.6rem/1.4 var(--f-mark); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+.area ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; font-size: 0.98rem; color: var(--muted); }
+.area li { padding-left: 16px; position: relative; }
+.area li::before { content: ""; position: absolute; left: 0; top: 0.72em; width: 7px; height: 1px; background: var(--ink); }
+
+.steps { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 0; counter-reset: s; border-top: 1px solid var(--rule); }
+.steps li { display: grid; grid-template-columns: 3.2rem minmax(0, 1fr); gap: 12px; padding-block: 20px; border-bottom: 1px solid var(--rule); counter-increment: s; }
+.steps li::before { content: counter(s, decimal-leading-zero); font: 400 0.8rem/1.9 var(--f-mark); color: var(--muted); }
+.steps strong { display: block; font: 600 1.05rem/1.35 var(--f-head); margin-bottom: 4px; }
+.steps span { color: var(--muted); }
+
+.cv { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--rule); }
+.cv li { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: 16px; padding-block: 14px; border-bottom: 1px solid var(--rule); }
+.cv time { font: 400 0.8rem/1.9 var(--f-mark); color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* Contato */
+.contact { background: var(--band); color: var(--band-ink); }
+.contact .wrap { padding-block: 88px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; }
+.contact h2 { font-size: clamp(1.7rem, 3.2vw, 2.4rem); font-stretch: 112%; }
+.contact .intro { display: grid; gap: 16px; align-content: start; }
+.contact .intro p { color: var(--band-muted); max-width: 30em; }
+.channels { display: grid; gap: 0; border-top: 1px solid #ffffff2a; }
+.channel { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px; padding-block: 18px; border-bottom: 1px solid #ffffff2a; }
+.channel dt { font: 400 0.6rem/1.4 var(--f-mark); letter-spacing: 0.14em; text-transform: uppercase; color: var(--band-muted); }
+.channel dd { margin: 4px 0 0; font: 600 1.15rem/1.3 var(--f-head); overflow-wrap: anywhere; user-select: all; }
+.channel a.go { font: 500 0.85rem var(--f-head); color: var(--band-ink); text-decoration: none; border-bottom: 1px solid var(--band-muted); white-space: nowrap; }
+.channel button { font: 500 0.85rem var(--f-head); color: var(--band-ink); background: none; border: 0; border-bottom: 1px solid var(--band-muted); padding: 0; cursor: pointer; white-space: nowrap; }
+
+footer.foot { background: var(--band); color: var(--band-muted); border-top: 1px solid #ffffff1f; }
+footer.foot .wrap { padding-block: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; font-size: 0.85rem; }
+footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em; }
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 32px; padding-block: 48px 0; }
+  .hero-text { padding-bottom: 0; }
+  .portrait { max-width: 300px; justify-self: start; }
+  .split, .contact .wrap { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .areas { grid-template-columns: minmax(0, 1fr); }
+  .area, .area + .area { padding: 22px 0 18px; border-left: 0; }
+  .area + .area { border-top: 1px solid var(--rule); }
+  section.block, .contact .wrap { padding-block: 60px; }
+  .top nav { display: none; }
+}
+@media (max-width: 520px) {
+  .facts { grid-template-columns: minmax(0, 1fr); }
+  .facts div { padding-block: 14px; border-bottom: 1px solid #ffffff14; }
+  .btn { flex: 1 1 100%; justify-content: center; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .btn, .top nav a { transition: background-color .15s, color .15s; }
+}
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="jo" viewBox="60 50 1140 1145">
+    <g fill="none" stroke="currentColor" stroke-width="140" stroke-linejoin="round" stroke-linecap="butt">
+      <path d="M138 257 V770 L482 1114 L840 756 V338 L630 128 L418 340 V682 L580 844"/>
+      <path d="M1122 257 V870 L878 1114 L780 1016"/>
+    </g>
+  </symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.5-.3Z"/></symbol>
+</svg>
+
+<div class="band">
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="#inicio" aria-label="Jonas Okada Sociedade de Advocacia, início">
+        <svg aria-hidden="true"><use href="#jo"/></svg>
+        <span><span class="brand-name">JONAS OKADA</span><span class="brand-sub">SOCIEDADE DE ADVOCACIA</span></span>
+      </a>
+      <nav aria-label="Seções">
+        <a href="#atuacao">Atuação</a>
+        <a href="#atendimento">Atendimento</a>
+        <a href="#socio">O sócio</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+
+    <div class="hero" id="inicio">
+      <div class="hero-text">
+        <p class="eyebrow">Curitiba, PR · Desde 2012</p>
+        <h1>Advocacia trabalhista empresarial, preventiva e contenciosa.</h1>
+        <p class="lede">Assessoramos empresas na gestão das relações de trabalho, ao lado de empresários e das equipes de DP (Departamento Pessoal) e RH (Recursos Humanos). <strong>Atendimento ágil e sem burocracia, do diagnóstico à condução do caso.</strong></p>
+        <div class="actions">
+          <a class="btn btn-solid" href="https://wa.me/5541999795481" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Conversar pelo WhatsApp</a>
+          <a class="btn btn-line" href="#atuacao">Áreas de atuação</a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="jonas-okada.jpg" alt="Jonas Okada, advogado e sócio fundador do escritório" width="600" height="527">
+        <figcaption>JONAS OKADA · SÓCIO FUNDADOR</figcaption>
+      </figure>
+    </div>
+
+    <dl class="facts">
+      <div><dt>Fundação</dt><dd>2012</dd></div>
+      <div><dt>Especialidade</dt><dd>Direito do Trabalho para empresas</dd></div>
+      <div><dt>Atendimento</dt><dd>Ágil e sem burocracia</dd></div>
+    </dl>
+  </div>
+</div>
+
+<main>
+  <section class="block" id="atuacao" aria-labelledby="h-atuacao">
+    <div class="wrap" style="display:grid; gap:40px">
+      <div class="split">
+        <header>
+          <p class="eyebrow">Áreas de atuação</p>
+          <h2 id="h-atuacao">Prevenir passivos antes que eles virem processos e conduzir os que já existem.</h2>
+        </header>
+        <div class="prose">
+          <p>O escritório acompanha a rotina trabalhista das empresas em duas frentes. Na preventiva, orienta decisões do dia a dia e revisa práticas para reduzir riscos. Na contenciosa, conduz processos trabalhistas e cíveis empresariais.</p>
+        </div>
+      </div>
+      <div class="areas">
+        <article class="area">
+          <span class="kind">Preventiva</span>
+          <h3>Consultoria trabalhista</h3>
+          <ul>
+            <li>Orientação em rotinas de DP e RH</li>
+            <li>Contratos, jornadas, escalas, banco de horas e regime de compensação de horas</li>
+            <li>Terceirização e pejotização: estruturação e análise de riscos</li>
+            <li>Adequação a mudanças na legislação</li>
+            <li>Aplicação de convenções e acordos coletivos na rotina da empresa</li>
+          </ul>
+        </article>
+        <article class="area">
+          <span class="kind">Preventiva</span>
+          <h3>Auditoria e análise de passivo</h3>
+          <ul>
+            <li>Auditoria trabalhista</li>
+            <li>Análise de risco e de passivo trabalhista</li>
+            <li>Revisão de documentos e procedimentos internos</li>
+          </ul>
+        </article>
+        <article class="area">
+          <span class="kind">Contenciosa</span>
+          <h3>Contencioso trabalhista e cível empresarial</h3>
+          <ul>
+            <li>Defesa da empresa em reclamações trabalhistas</li>
+            <li>Audiências, recursos e acompanhamento processual</li>
+            <li>Demandas cíveis empresariais</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="atendimento" aria-labelledby="h-atendimento">
+    <div class="wrap split">
+      <header>
+        <p class="eyebrow">Forma de atendimento</p>
+        <h2 id="h-atendimento">Respostas rápidas, sem burocracia.</h2>
+      </header>
+      <div class="prose">
+        <p>As decisões trabalhistas de uma empresa não podem esperar. Por isso, o escritório trabalha com comunicação direta e retorno ágil, pelos canais que a empresa já usa no dia a dia, como WhatsApp, e-mail e videochamada.</p>
+        <ol class="steps">
+          <li><div><strong>Demanda</strong><span>A empresa envia a dúvida ou o documento pelo canal mais prático, sem formulários nem etapas intermediárias.</span></div></li>
+          <li><div><strong>Análise</strong><span>A questão é examinada por quem já conhece o histórico da empresa, sem necessidade de repetir o contexto a cada contato.</span></div></li>
+          <li><div><strong>Orientação</strong><span>Resposta objetiva, em linguagem clara para gestores, DP e RH, com os caminhos possíveis e os cuidados de cada um.</span></div></li>
+          <li><div><strong>Acompanhamento</strong><span>Condução do caso ou da adequação até o fim, com atualizações a cada etapa.</span></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="socio" aria-labelledby="h-socio">
+    <div class="wrap split">
+      <header>
+        <p class="eyebrow">O sócio</p>
+        <h2 id="h-socio">Jonas Okada</h2>
+      </header>
+      <div class="prose">
+        <p>Advogado trabalhista empresarial e sócio fundador da Jonas Okada Sociedade de Advocacia. Há mais de 14 anos assessora empresas na gestão das relações de trabalho, com foco em prevenção.</p>
+        <ul class="cv">
+          <li><time>2010</time><span>Graduação em Direito pela Faculdade de Direito de Curitiba</span></li>
+          <li><time>2012</time><span>Início da atuação do escritório</span></li>
+          <li><time>2013</time><span>Membro das Comissões de Direito do Trabalho e de Direito Previdenciário da OAB-PR</span></li>
+          <li><time>2014</time><span>Pós-graduação em Direito do Trabalho, Processo do Trabalho e Direito Previdenciário pela EMATRA-PR</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="contact" id="contato" aria-labelledby="h-contato">
+  <div class="wrap">
+    <div class="intro">
+      <p class="eyebrow" style="color:var(--band-muted)">Contato</p>
+      <h2 id="h-contato">Fale com o escritório.</h2>
+      <p>Escritório em Curitiba, PR. Fale pelo canal que for mais prático para a sua empresa.</p>
+    </div>
+    <dl class="channels">
+      <div class="channel">
+        <div><dt>WhatsApp e telefone</dt><dd>(41) 99979-5481</dd></div>
+        <a class="go" href="https://wa.me/5541999795481" target="_blank" rel="noopener">Abrir WhatsApp</a>
+      </div>
+      <div class="channel">
+        <div><dt>E-mail</dt><dd id="mail">jonas@okadaadvocacia.com</dd></div>
+        <button type="button" id="copy-mail" data-target="mail">Copiar</button>
+      </div>
+      <div class="channel">
+        <div><dt>LinkedIn</dt><dd>Jonas Okada Sociedade de Advocacia</dd></div>
+        <a class="go" href="https://www.linkedin.com/company/jonasokada/" target="_blank" rel="noopener">Ver página</a>
+      </div>
+      <div class="channel">
+        <div><dt>Localidade</dt><dd>Curitiba, Paraná</dd></div>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">JONAS GUSTAVO OKADA SOCIEDADE INDIVIDUAL DE ADVOCACIA · OAB/PR 7.433<br>RESPONSÁVEL TÉCNICO: JONAS GUSTAVO OKADA · OAB/PR 58.840</span>
+    <span>Conteúdo informativo, nos termos do Provimento 205/2021 do Conselho Federal da OAB.</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('copy-mail').addEventListener('click', function () {
+  var btn = this, el = document.getElementById(btn.dataset.target);
+  function done(t) { btn.textContent = t; setTimeout(function () { btn.textContent = 'Copiar'; }, 1800); }
+  function select() { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); done('Selecionado'); }
+  try { navigator.clipboard.writeText(el.textContent).then(function () { done('Copiado'); }, select); } catch (e) { select(); }
+});
+</script>
+
+</body>
+</html>
