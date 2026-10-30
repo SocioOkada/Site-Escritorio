@@ -107,6 +107,8 @@ section.block { padding-block: 88px; border-bottom: 1px solid var(--rule); }
 .area li { padding-left: 16px; position: relative; }
 .area li::before { content: ""; position: absolute; left: 0; top: 0.72em; width: 7px; height: 1px; background: var(--ink); }
 
+.others { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.98rem; max-width: none; }
+.others .eyebrow { flex: none; }
 .steps { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 0; counter-reset: s; border-top: 1px solid var(--rule); }
 .steps li { display: grid; grid-template-columns: 3.2rem minmax(0, 1fr); gap: 12px; padding-block: 20px; border-bottom: 1px solid var(--rule); counter-increment: s; }
 .steps li::before { content: counter(s, decimal-leading-zero); font: 400 0.8rem/1.9 var(--f-mark); color: var(--muted); }
@@ -250,6 +252,7 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
           </ul>
         </article>
       </div>
+      <p class="others"><span class="eyebrow">Outras áreas</span> O escritório também atua em contratos em geral, direito do consumidor, direito imobiliário e direito empresarial.</p>
     </div>
   </section>
 
@@ -309,6 +312,10 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
       <div class="channel">
         <div><dt>LinkedIn</dt><dd>Jonas Okada Sociedade de Advocacia</dd></div>
         <a class="go" href="https://www.linkedin.com/company/jonasokada/" target="_blank" rel="noopener">Ver página</a>
+      </div>
+      <div class="channel">
+        <div><dt>Instagram</dt><dd>@jonasokadaadvocacia</dd></div>
+        <a class="go" href="https://www.instagram.com/jonasokadaadvocacia/" target="_blank" rel="noopener">Ver perfil</a>
       </div>
       <div class="channel">
         <div><dt>Localidade</dt><dd>Curitiba, Paraná</dd></div>
