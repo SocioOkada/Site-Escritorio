@@ -200,7 +200,7 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
 </style>
 <style>
 /* Padrão de texto: parágrafos justificados com hifenização; títulos e rótulos alinhados à esquerda. */
-.prose p, .article p, .article li, .steps span, .area li, .others, .contact .intro p, .faq details p { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+.hero .lede, .prose p, .article p, .article li, .steps span, .area li, .others, .contact .intro p, .faq details p { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
 /* Página de conteúdo: faixa curta de abertura e coluna de leitura com índice lateral. */
 .hero.short { grid-template-columns: minmax(0, 1fr); padding-block: 64px 0; }
 .hero.short .hero-text { padding-bottom: 64px; max-width: 46em; }
@@ -238,6 +238,11 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
 .faq summary::after { content: "+"; font: 400 1.2rem/1 var(--f-mark); color: var(--muted); }
 .faq details[open] summary::after { content: "–"; }
 .faq details p { margin-top: 10px; color: var(--muted); }
+.exlist { list-style: none; margin: 14px 0 0; padding: 0; display: grid; border-top: 1px solid var(--rule); }
+.exlist li { display: grid; grid-template-columns: 1.8rem minmax(0, 1fr); gap: 8px; padding-block: 10px; border-bottom: 1px solid var(--rule); font-size: 0.96rem; }
+.exlist b { font: 400 0.78rem/1.9 var(--f-mark); color: var(--muted); }
+.exlist strong { display: block; text-align: left; font: 600 0.98rem/1.4 var(--f-head); }
+.exlist span { color: var(--muted); text-align: justify; hyphens: auto; -webkit-hyphens: auto; display: block; }
 .note { font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 18px; }
 @media (max-width: 860px) {
   .read { grid-template-columns: minmax(0, 1fr); gap: 36px; padding-block: 48px 64px; }
@@ -411,6 +416,25 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
       <p class="eyebrow">07 · Dúvidas frequentes</p>
       <h2 id="h-duvidas">Perguntas que DP e RH costumam fazer</h2>
       <div class="faq">
+        <details>
+          <summary>Que condutas podem levar à justa causa em cada alínea do artigo 482?</summary>
+          <p>Alguns exemplos, que dependem sempre das circunstâncias, da prova e dos requisitos vistos acima:</p>
+          <ul class="exlist">
+            <li><b>a</b><div><strong>Ato de improbidade</strong><span>Furto de bens ou dinheiro da empresa; apresentação de atestado médico falso ou adulterado; fraude em notas de reembolso ou no registro de ponto.</span></div></li>
+            <li><b>b</b><div><strong>Incontinência de conduta ou mau procedimento</strong><span>Assédio sexual a colega; exibição de conteúdo obsceno no ambiente de trabalho; uso do veículo da empresa para fins particulares, sem autorização.</span></div></li>
+            <li><b>c</b><div><strong>Negociação habitual</strong><span>Manter negócio próprio que atende os clientes da empresa; vender produtos de concorrente aos clientes da empresa; desviar clientes para um concorrente.</span></div></li>
+            <li><b>d</b><div><strong>Condenação criminal</strong><span>Condenação definitiva a pena de prisão, sem suspensão; condenação definitiva em regime fechado; qualquer condenação definitiva que impeça o comparecimento ao trabalho.</span></div></li>
+            <li><b>e</b><div><strong>Desídia</strong><span>Atrasos reiterados, mesmo após advertências e suspensões; faltas injustificadas repetidas; negligência repetida nas tarefas, como deixar de fazer conferências obrigatórias.</span></div></li>
+            <li><b>f</b><div><strong>Embriaguez habitual ou em serviço</strong><span>Chegar embriagado ao trabalho; consumir bebida alcoólica durante o expediente; dirigir ou operar máquinas sob efeito de álcool ou drogas.</span></div></li>
+            <li><b>g</b><div><strong>Violação de segredo da empresa</strong><span>Repassar a lista de clientes a um concorrente; divulgar fórmulas, projetos ou preços estratégicos; copiar arquivos sigilosos para uso próprio ou de terceiros.</span></div></li>
+            <li><b>h</b><div><strong>Indisciplina ou insubordinação</strong><span>Descumprir norma do regulamento interno, como a proibição de fumar em área de risco; recusar ordem direta e legítima do superior; usar o celular em local proibido, como a linha de produção, mesmo após advertências.</span></div></li>
+            <li><b>i</b><div><strong>Abandono de emprego</strong><span>Mais de 30 dias de ausência sem justificativa; não retornar ao trabalho após a alta do INSS; assumir outro emprego no mesmo horário e deixar de comparecer.</span></div></li>
+            <li><b>j</b><div><strong>Ofensa ou agressão a qualquer pessoa</strong><span>Agressão física a colega; ofensas ou ameaças a clientes; injúria racial contra colega.</span></div></li>
+            <li><b>k</b><div><strong>Ofensa ou agressão ao empregador e superiores</strong><span>Agressão física ao superior; ofensas públicas ao empregador nas redes sociais; ameaças ao gestor.</span></div></li>
+            <li><b>l</b><div><strong>Prática constante de jogos de azar</strong><span>Organizar apostas no ambiente de trabalho; promover jogo do bicho no local de trabalho; fazer apostas on-line de forma constante durante o expediente.</span></div></li>
+            <li><b>m</b><div><strong>Perda da habilitação</strong><span>Motorista que perde a CNH por dirigir embriagado; profissional que tem o registro cassado pelo conselho por conduta dolosa; vigilante que perde o registro profissional por crime doloso.</span></div></li>
+          </ul>
+        </details>
         <details>
           <summary>A empresa precisa aplicar advertência e suspensão antes da justa causa?</summary>
           <p>Não existe na lei uma exigência de advertência e suspensão antes da justa causa. Faltas graves, como um ato de improbidade, podem justificar a dispensa imediata. Já faltas leves e repetidas, como atrasos, normalmente exigem um histórico de punições anteriores para que a dispensa seja considerada proporcional.</p>
