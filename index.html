@@ -127,6 +127,15 @@ section.block { padding-block: 88px; border-bottom: 1px solid var(--rule); }
 .area li { padding-left: 16px; position: relative; }
 .area li::before { content: ""; position: absolute; left: 0; top: 0.72em; width: 7px; height: 1px; background: var(--ink); }
 
+.guides { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 2px solid var(--ink); }
+.guide { padding: 26px 24px 22px 0; display: grid; gap: 12px; align-content: start; text-decoration: none; }
+.guide + .guide { padding-left: 24px; border-left: 1px solid var(--rule); }
+.guide .kind { font: 400 0.6rem/1.4 var(--f-mark); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+.guide h3 { font-size: 1.2rem; }
+.guide p { color: var(--muted); font-size: 0.98rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+.guide .more { font: 500 0.88rem var(--f-head); border-bottom: 1px solid var(--muted); justify-self: start; }
+.guide:hover h3 { text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 860px) { .guides { grid-template-columns: minmax(0, 1fr); } .guide, .guide + .guide { padding: 22px 0 18px; border-left: 0; } .guide + .guide { border-top: 1px solid var(--rule); } }
 .others { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.98rem; max-width: none; }
 .others .eyebrow { flex: none; }
 .steps { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 0; counter-reset: s; border-top: 1px solid var(--rule); }
@@ -203,7 +212,7 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
         <a href="#atuacao">Atuação</a>
         <a href="#atendimento">Atendimento</a>
         <a href="#socio">O sócio</a>
-        <a href="justa-causa/">Justa causa</a>
+        <a href="#guias">Guias</a>
         <a href="#contato">Contato</a>
       </nav>
     </div>
@@ -276,7 +285,6 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
         </article>
       </div>
       <p class="others"><span class="eyebrow">Outras áreas</span> O escritório também atua em contratos em geral, direito do consumidor, direito imobiliário e direito empresarial.</p>
-      <p class="others"><span class="eyebrow">Conteúdo</span> <a href="justa-causa/">Justa causa sem medo: guia para empresas, DP e RH</a></p>
     </div>
   </section>
 
@@ -294,6 +302,28 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
           <li><div><strong>Orientação</strong><span>Resposta objetiva, em linguagem clara para gestores, DP e RH, com os caminhos possíveis e os cuidados de cada um.</span></div></li>
           <li><div><strong>Acompanhamento</strong><span>Condução do caso ou da adequação até o fim, com atualizações a cada etapa.</span></div></li>
         </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="guias" aria-labelledby="h-guias">
+    <div class="wrap" style="display:grid; gap:40px">
+      <div class="split">
+        <header>
+          <p class="eyebrow">Guias para empresas</p>
+          <h2 id="h-guias">Conteúdo prático para empresários, DP e RH.</h2>
+        </header>
+        <div class="prose">
+          <p>Guias informativos sobre temas trabalhistas do dia a dia das empresas, com o que a lei exige e os cuidados em cada etapa.</p>
+        </div>
+      </div>
+      <div class="guides">
+        <a class="guide" href="justa-causa/">
+          <span class="kind">Dispensa</span>
+          <h3>Justa causa sem medo</h3>
+          <p>Quando cabe, o que a Justiça do Trabalho analisa e o passo a passo para aplicar a justa causa corretamente.</p>
+          <span class="more">Ler o guia</span>
+        </a>
       </div>
     </div>
   </section>
