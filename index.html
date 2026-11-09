@@ -117,8 +117,8 @@ section.block { padding-block: 88px; border-bottom: 1px solid var(--rule); }
 .split h2 { font-size: clamp(1.55rem, 2.8vw, 2.1rem); }
 .prose { display: grid; gap: 18px; max-width: 40em; }
 .side-photo { margin: 14px 0 0; max-width: 340px; }
-.side-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 25%; }
-@media (max-width: 860px) { .side-photo { max-width: 100%; } .side-photo img { aspect-ratio: 4 / 3; } }
+.side-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 0%; }
+@media (max-width: 860px) { .side-photo { max-width: 420px; } .side-photo img { aspect-ratio: 1 / 1; } }
 .prose p { color: var(--ink); }
 
 .areas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 2px solid var(--ink); }
