@@ -17,6 +17,7 @@ Valem para toda página nova ou atualizada, em especial os guias.
 - A cada atualização, mudar a data e hora de "Atualizado em", o `dateModified` do JSON-LD e o `lastmod` do `sitemap.xml`.
 
 ## Texto
+- Siglas DP e RH: TODA menção vem com o significado, "DP (Departamento Pessoal)" e "RH (Recursos Humanos)", inclusive em títulos, rótulos, descrições para o Google e textos alternativos (regra de 09/11/2026, pedido do Jonas).
 - Parágrafos justificados (`text-align: justify; hyphens: auto`); títulos à esquerda.
 - Seguir o Provimento 205/2021 da OAB: sem promessa de resultado, preços, clientes identificáveis ou comparação.
 - Evitar frases-feitas e fórmulas de efeito ("não é X, é Y"); preferir situações concretas do dia a dia de DP e RH.
