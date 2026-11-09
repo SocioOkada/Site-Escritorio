@@ -189,6 +189,14 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
 }
 /* Padrão de texto: parágrafos justificados com hifenização; títulos e rótulos alinhados à esquerda. */
 .hero .lede, .prose p, .article p, .article li, .steps span, .area li, .others, .contact .intro p, .faq details p { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+/* Abertura com degradê sutil (único do site) e marca d'água do símbolo; contato só com marca d'água. No celular, sem marca d'água. */
+.band { position: relative; overflow: hidden; background: radial-gradient(120% 90% at 85% 0%, #232525 0%, #0d0e0e 62%); }
+.band > .wrap { position: relative; z-index: 1; }
+.band::before { content:""; position:absolute; right:-6%; top:8%; width:min(62vw,760px); aspect-ratio:1; background:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'60%2050%201140%201145'%3E%3Cg%20fill%3D'none'%20stroke%3D'white'%20stroke-width%3D'140'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M138%20257%20V770%20L482%201114%20L840%20756%20V338%20L630%20128%20L418%20340%20V682%20L580%20844'%2F%3E%3Cpath%20d%3D'M1122%20257%20V870%20L878%201114%20L780%201016'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat center/contain; opacity:.045; pointer-events:none; }
+.contact { position: relative; overflow: hidden; }
+.contact > .wrap { position: relative; z-index: 1; }
+.contact::before { content:""; position:absolute; left:-12%; bottom:-30%; width:min(55vw,620px); aspect-ratio:1; background:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'60%2050%201140%201145'%3E%3Cg%20fill%3D'none'%20stroke%3D'white'%20stroke-width%3D'140'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M138%20257%20V770%20L482%201114%20L840%20756%20V338%20L630%20128%20L418%20340%20V682%20L580%20844'%2F%3E%3Cpath%20d%3D'M1122%20257%20V870%20L878%201114%20L780%201016'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat center/contain; opacity:.04; pointer-events:none; }
+@media (max-width: 860px) { .band::before, .contact::before { display: none; } }
 </style>
 </head>
 <body>
