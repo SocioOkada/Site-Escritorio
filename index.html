@@ -116,6 +116,9 @@ section.block { padding-block: 88px; border-bottom: 1px solid var(--rule); }
 .split > header { display: grid; gap: 14px; align-content: start; }
 .split h2 { font-size: clamp(1.55rem, 2.8vw, 2.1rem); }
 .prose { display: grid; gap: 18px; max-width: 40em; }
+.side-photo { margin: 14px 0 0; max-width: 340px; }
+.side-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 25%; }
+@media (max-width: 860px) { .side-photo { max-width: 100%; } .side-photo img { aspect-ratio: 4 / 3; } }
 .prose p { color: var(--ink); }
 
 .areas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 2px solid var(--ink); }
@@ -293,6 +296,7 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
       <header>
         <p class="eyebrow">Forma de atendimento</p>
         <h2 id="h-atendimento">O DP pergunta pelo WhatsApp e recebe a orientação por escrito.</h2>
+        <figure class="side-photo"><img src="atendimento.jpg" alt="Jonas Okada em atendimento, trabalhando no notebook à mesa do escritório" width="720" height="900" loading="lazy"></figure>
       </header>
       <div class="prose">
         <p>Uma dúvida sobre escala, advertência ou rescisão costuma surgir no meio do expediente, com o empregado esperando uma resposta. Por isso, o escritório atende pelos canais que a empresa já usa, como WhatsApp, e-mail e videochamada, e devolve a orientação por escrito, para que o DP e o RH possam arquivar e consultar depois.</p>
@@ -312,6 +316,7 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
         <header>
           <p class="eyebrow">Guias para empresas</p>
           <h2 id="h-guias">Conteúdo prático para empresários, DP e RH.</h2>
+          <figure class="side-photo"><img src="trabalho-notebook.jpg" alt="Mãos de advogado de terno digitando em um notebook" width="720" height="900" loading="lazy"></figure>
         </header>
         <div class="prose">
           <p>Guias informativos sobre temas trabalhistas do dia a dia das empresas, com o que a lei exige e os cuidados em cada etapa.</p>
