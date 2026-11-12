@@ -32,7 +32,7 @@
     "description": "Guia para empresas, DP (Departamento Pessoal) e RH (Recursos Humanos) sobre quando cabe a justa causa, os requisitos analisados pela Justiça do Trabalho e o passo a passo para aplicá-la corretamente.",
     "inLanguage": "pt-BR",
     "datePublished": "2026-11-04",
-    "dateModified": "2026-11-09T12:25:00-03:00",
+    "dateModified": "2026-11-12T15:20:00-03:00",
     "mainEntityOfPage": "https://okadaadvocacia.com/justa-causa/",
     "image": "https://okadaadvocacia.com/jonas-okada.jpg",
     "about": ["Justa causa", "Demissão por justa causa", "Direito do Trabalho", "Art. 482 da CLT", "Verbas rescisórias"],
@@ -272,6 +272,14 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
   .grid2, .hyp, .pay { grid-template-columns: minmax(0, 1fr); }
   .grid2 > div:nth-child(even) { padding-left: 0; border-left: 0; }
 }
+/* Abertura com degradê sutil (único do site) e marca d'água do símbolo; contato só com marca d'água. No celular, marca d'água centralizada. */
+.band { position: relative; overflow: hidden; background: radial-gradient(120% 90% at 85% 0%, #232525 0%, #0d0e0e 62%); }
+.band > .wrap { position: relative; z-index: 1; }
+.band::before { content:""; position:absolute; right:-6%; top:8%; width:min(62vw,760px); aspect-ratio:1; background:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'60%2050%201140%201145'%3E%3Cg%20fill%3D'none'%20stroke%3D'white'%20stroke-width%3D'140'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M138%20257%20V770%20L482%201114%20L840%20756%20V338%20L630%20128%20L418%20340%20V682%20L580%20844'%2F%3E%3Cpath%20d%3D'M1122%20257%20V870%20L878%201114%20L780%201016'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat center/contain; opacity:.045; pointer-events:none; }
+.contact { position: relative; overflow: hidden; }
+.contact > .wrap { position: relative; z-index: 1; }
+.contact::before { content:""; position:absolute; left:-12%; bottom:-30%; width:min(55vw,620px); aspect-ratio:1; background:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'60%2050%201140%201145'%3E%3Cg%20fill%3D'none'%20stroke%3D'white'%20stroke-width%3D'140'%20stroke-linejoin%3D'round'%3E%3Cpath%20d%3D'M138%20257%20V770%20L482%201114%20L840%20756%20V338%20L630%20128%20L418%20340%20V682%20L580%20844'%2F%3E%3Cpath%20d%3D'M1122%20257%20V870%20L878%201114%20L780%201016'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat center/contain; opacity:.04; pointer-events:none; }
+@media (max-width: 860px) { .band::before, .contact::before { left: 50%; right: auto; top: 50%; bottom: auto; width: 88vw; transform: translate(-50%, -50%); opacity: .035; } }
 </style>
 </head>
 <body>
@@ -307,7 +315,7 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
         <p class="eyebrow">Guia para empresas · DP (Departamento Pessoal) e RH (Recursos Humanos)</p>
         <h1>Justa causa sem medo: aplicada do jeito certo, ela tem respaldo na lei.</h1>
         <p class="lede">Muitos empresários deixam de aplicar a justa causa por receio de vê-la revertida na Justiça do Trabalho. Mas a reversão costuma nascer de falhas de procedimento, e não do instituto em si. <strong>Este guia mostra o que a lei exige e como a empresa pode conduzir cada etapa com segurança.</strong></p>
-        <p class="byline">Por <strong>Jonas Gustavo Okada</strong>, OAB/PR 58.840 · Publicado em <time datetime="2026-11-04">04.11.2026</time> · Atualizado em <time datetime="2026-11-09T12:25-03:00">09.11.2026 às 12:25</time></p>
+        <p class="byline">Por <strong>Jonas Gustavo Okada</strong>, OAB/PR 58.840 · Publicado em <time datetime="2026-11-04">04.11.2026</time> · Atualizado em <time datetime="2026-11-12T15:20-03:00">12.11.2026 às 15:20</time></p>
         <div class="actions">
           <a class="btn btn-solid" href="https://wa.me/5541999795481?text=Ol%C3%A1%2C%20gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20justa%20causa." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Tirar dúvidas pelo WhatsApp</a>
           <a class="btn btn-line" href="#passo-a-passo">Ver o passo a passo</a>
