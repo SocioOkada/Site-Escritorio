@@ -136,6 +136,9 @@ section.block { padding-block: 88px; border-bottom: 1px solid var(--rule); }
 .guide .kind { font: 400 0.6rem/1.4 var(--f-mark); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
 .guide h3 { font-size: 1.2rem; }
 .guide p { color: var(--muted); font-size: 0.98rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+#guias .prose { align-content: start; }
+.prose .guides { grid-template-columns: minmax(0, 1fr); margin-top: 6px; }
+.prose .guide { padding-right: 0; }
 .guide .more { font: 500 0.88rem var(--f-head); border-bottom: 1px solid var(--muted); justify-self: start; }
 .guide:hover h3 { text-decoration: underline; text-underline-offset: 4px; }
 @media (max-width: 860px) { .guides { grid-template-columns: minmax(0, 1fr); } .guide, .guide + .guide { padding: 22px 0 18px; border-left: 0; } .guide + .guide { border-top: 1px solid var(--rule); } }
@@ -328,15 +331,15 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
         </header>
         <div class="prose">
           <p>Guias informativos sobre temas trabalhistas do dia a dia das empresas, com o que a lei exige e os cuidados em cada etapa.</p>
+          <div class="guides">
+            <a class="guide" href="justa-causa/">
+              <span class="kind">Dispensa</span>
+              <h3>Justa causa sem medo</h3>
+              <p>Quando cabe, o que a Justiça do Trabalho analisa e o passo a passo para aplicar a justa causa corretamente.</p>
+              <span class="more">Ler o guia</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="guides">
-        <a class="guide" href="justa-causa/">
-          <span class="kind">Dispensa</span>
-          <h3>Justa causa sem medo</h3>
-          <p>Quando cabe, o que a Justiça do Trabalho analisa e o passo a passo para aplicar a justa causa corretamente.</p>
-          <span class="more">Ler o guia</span>
-        </a>
       </div>
     </div>
   </section>
