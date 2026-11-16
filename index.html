@@ -6,32 +6,61 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
-"@type": "LegalService",
-"name": "Jonas Okada Sociedade de Advocacia",
-"legalName": "Jonas Gustavo Okada Sociedade Individual de Advocacia",
-"url": "https://okadaadvocacia.com/",
-"logo": "https://okadaadvocacia.com/favicon.svg",
-"image": "https://okadaadvocacia.com/jonas-okada.jpg",
-"description": "Advocacia trabalhista empresarial, preventiva e contenciosa, para empresas. Curitiba, PR.",
-"telephone": "+55-41-99979-5481",
-"email": "jonas@okadaadvocacia.com",
-"foundingDate": "2012",
-"address": { "@type": "PostalAddress", "addressLocality": "Curitiba", "addressRegion": "PR", "addressCountry": "BR" },
-"areaServed": { "@type": "City", "name": "Curitiba" },
-"knowsAbout": ["Direito do Trabalho", "Consultoria trabalhista empresarial", "Auditoria trabalhista", "Contencioso trabalhista", "Direito empresarial"],
-"founder": { "@type": "Person", "name": "Jonas Gustavo Okada", "jobTitle": "Advogado, sócio fundador" },
-"sameAs": ["https://www.linkedin.com/company/jonasokada/", "https://www.instagram.com/jonasokadaadvocacia/"]
+"@graph": [
+  {
+    "@type": "WebSite",
+    "@id": "https://okadaadvocacia.com/#site",
+    "name": "Okada Advocacia",
+    "alternateName": ["Jonas Okada Sociedade de Advocacia", "Jonas Okada Advocacia", "okadaadvocacia.com"],
+    "url": "https://okadaadvocacia.com/",
+    "inLanguage": "pt-BR",
+    "publisher": { "@id": "https://okadaadvocacia.com/#escritorio" }
+  },
+  {
+    "@type": "LegalService",
+    "@id": "https://okadaadvocacia.com/#escritorio",
+    "name": "Okada Advocacia",
+    "alternateName": ["Jonas Okada Sociedade de Advocacia", "Jonas Okada Advocacia", "Jonas Okada Advogado", "Okada Advocacia Trabalhista"],
+    "legalName": "Jonas Gustavo Okada Sociedade Individual de Advocacia",
+    "url": "https://okadaadvocacia.com/",
+    "logo": "https://okadaadvocacia.com/assinatura-logo.png",
+    "image": "https://okadaadvocacia.com/jonas-okada.jpg",
+    "description": "Okada Advocacia: advocacia trabalhista empresarial, preventiva e contenciosa, para empresas. Curitiba, PR.",
+    "telephone": "+55-41-99979-5481",
+    "email": "jonas@okadaadvocacia.com",
+    "foundingDate": "2012",
+    "address": { "@type": "PostalAddress", "addressLocality": "Curitiba", "addressRegion": "PR", "addressCountry": "BR" },
+    "areaServed": { "@type": "City", "name": "Curitiba" },
+    "knowsAbout": ["Direito do Trabalho", "Advocacia trabalhista empresarial", "Consultoria trabalhista empresarial", "Auditoria trabalhista", "Contencioso trabalhista", "Justa causa", "Direito empresarial"],
+    "founder": { "@id": "https://okadaadvocacia.com/#jonas" },
+    "sameAs": ["https://www.linkedin.com/company/jonasokada/", "https://www.instagram.com/jonasokadaadvocacia/"]
+  },
+  {
+    "@type": "Person",
+    "@id": "https://okadaadvocacia.com/#jonas",
+    "name": "Jonas Gustavo Okada",
+    "alternateName": "Jonas Okada",
+    "jobTitle": "Advogado trabalhista empresarial, sócio fundador",
+    "identifier": "OAB/PR 58.840",
+    "url": "https://okadaadvocacia.com/#socio",
+    "image": "https://okadaadvocacia.com/jonas-okada.jpg",
+    "worksFor": { "@id": "https://okadaadvocacia.com/#escritorio" },
+    "sameAs": ["https://www.linkedin.com/in/jonasokada/", "https://www.instagram.com/jonasokadaadvocacia/"]
+  }
+]
 }
 </script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://okadaadvocacia.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Jonas Okada Sociedade de Advocacia">
-<meta property="og:description" content="Advocacia trabalhista empresarial, preventiva e contenciosa. Curitiba, PR.">
+<meta property="og:title" content="Okada Advocacia | Jonas Okada Sociedade de Advocacia">
+<meta property="og:site_name" content="Okada Advocacia">
+<meta property="og:url" content="https://okadaadvocacia.com/">
+<meta property="og:description" content="Okada Advocacia: advocacia trabalhista empresarial, preventiva e contenciosa, para empresas. Curitiba, PR.">
 <meta property="og:image" content="https://okadaadvocacia.com/jonas-okada.jpg">
 <meta property="og:locale" content="pt_BR">
-<title>Jonas Okada Sociedade de Advocacia | Advocacia trabalhista empresarial em Curitiba</title>
-<meta name="description" content="Advocacia trabalhista empresarial, preventiva e contenciosa, para empresas. Dúvidas do dia a dia respondidas, em regra, no mesmo dia útil. Curitiba, PR.">
+<title>Okada Advocacia | Jonas Okada, advocacia trabalhista empresarial em Curitiba</title>
+<meta name="description" content="Okada Advocacia (Jonas Okada Sociedade de Advocacia): advocacia trabalhista empresarial, preventiva e contenciosa, para empresas em Curitiba, PR. Dúvidas do dia a dia respondidas, em regra, no mesmo dia útil.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&family=Archivo:wdth,wght@100,500;100,600;112,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
@@ -233,8 +262,8 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
 
     <div class="hero" id="inicio">
       <div class="hero-text">
-        <p class="eyebrow">Curitiba, PR · Desde 2012</p>
-        <h1>Advocacia trabalhista empresarial, preventiva e contenciosa.</h1>
+        <p class="eyebrow">Okada Advocacia · Curitiba, PR · Desde 2012</p>
+        <h1>Advocacia trabalhista empresarial, preventiva e contenciosa, em Curitiba.</h1>
         <p class="lede">Assessoramos empresas na gestão das relações de trabalho, ao lado de empresários e das equipes de DP (Departamento Pessoal) e RH (Recursos Humanos). <strong>Dúvidas do dia a dia são respondidas, em regra, no mesmo dia útil, pelo WhatsApp, por e-mail ou por videochamada.</strong></p>
         <div class="actions">
           <a class="btn btn-solid" href="https://wa.me/5541999795481" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Conversar pelo WhatsApp</a>
@@ -351,7 +380,7 @@ footer.foot .mark { font: 400 0.62rem/1.6 var(--f-mark); letter-spacing: 0.12em;
         <h2 id="h-socio">Jonas Okada</h2>
       </header>
       <div class="prose">
-        <p>Advogado trabalhista empresarial e sócio fundador da Jonas Okada Sociedade de Advocacia. Há mais de 14 anos assessora empresas na gestão das relações de trabalho, com foco em prevenção.</p>
+        <p>Advogado trabalhista empresarial e sócio fundador da Jonas Okada Sociedade de Advocacia (Okada Advocacia). Há mais de 14 anos assessora empresas na gestão das relações de trabalho, com foco em prevenção. Perfil profissional no <a href="https://www.linkedin.com/in/jonasokada/" target="_blank" rel="noopener">LinkedIn</a>.</p>
         <ul class="cv">
           <li><time>2010</time><span>Graduação em Direito pela Faculdade de Direito de Curitiba</span></li>
           <li><time>2012</time><span>Início da atuação do escritório</span></li>
